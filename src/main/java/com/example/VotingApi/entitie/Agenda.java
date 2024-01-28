@@ -16,7 +16,7 @@ public class Agenda {
     private Long id ;
     private String title ;
     private String Description ;
-    private Date openTime ;
+    private Date openingTime ;
     private Date closingTime ;
     @OneToMany(mappedBy = "agenda",fetch = FetchType.LAZY)
     private List<Vote> voteList ;

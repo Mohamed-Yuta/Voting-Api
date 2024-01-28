@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 public class Member {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id ;
+    private String VotingStatus ;
     @OneToOne
     private Vote vote;
 
